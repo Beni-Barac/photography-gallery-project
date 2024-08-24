@@ -76,15 +76,27 @@ body {
     display: grid;
     max-width: 100vw;
     max-height: 100vh;
-    grid-template-rows: repeat(3,180px);
-    grid-template-columns: repeat(3,270px);
-    gap: 50px;
+    grid-template-rows: repeat(3, 150px);
+    grid-template-columns: repeat(3,250px);
+    gap: 20px;
     justify-content: space-evenly;
     align-items: space-around;
 }
 
 .image-container {
-    background-color: #44255f;
+    max-height: 150px;
+    max-width: 270px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-picture {
+    object-fit: contain;
+    width: 100%;
+    height: 80%;
+    align-items:flex-end;
 }
 
 #gallery-footer {
