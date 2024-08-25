@@ -7,7 +7,7 @@
     /* secondary backgroud colors */
     --clr-img-container-background: #effaf7;
     --clr-filter-button-background: linear-gradient(0deg, #cde6f8, #79b3e2);
-    --clr-dark-theme-button-background: linear-gradient(#cdf8f1c4, #79e2d996);
+    --clr-dark-mode-button-background: linear-gradient(#cdf8f1c4, #79e2d996);
     --clr-add-photo-button-background: linear-gradient(#cde6f8, #79b3e2);
 
     /* primary font colors */
@@ -16,7 +16,7 @@
 
     /* secondary font colors */
     --clr-filter-button-font: #12274c;
-    --clr-dark-theme-button-font: #12274c;
+    --clr-dark-mode-button-font: #12274c;
     --clr-add-button-font: #12274c;
     --clr-current-page-font: #12274c;
 
@@ -27,7 +27,7 @@
     /* border colors" */
     --clr-filter-button-border: #11082c84;
     --clr-add-photo-button-border: #11082cae;
-    --clr-dark-theme-button-border: #051825c9;
+    --clr-dark-mode-button-border: #051825c9;
     --clr-prev-button-border: #11082c;
     --clr-next-button-border: #11082c;
 
@@ -35,7 +35,7 @@
     /*todo-separator: hovering-colors */
     /* background colors */
     --clr-filter-button-background-hover:  #79b3e288;
-    --clr-dark-theme-button-background-hover: #79e2d95b;
+    --clr-dark-mode-button-background-hover: #79e2d95b;
     --clr-add-photo-button-background-hover: #79b3e29c;
 
     /* font colors */
@@ -48,7 +48,7 @@
 
     /*todo-separator: active-colors */
     /* background colors */
-    --clr-dark-theme-button-background-active:  #6ac7bf69;
+    --clr-dark-mode-button-background-active:  #6ac7bf69;
     --clr-filter-button-background-active:  #6696bdab;
     --clr-add-photo-button-background-active: #6391b69c;
 
@@ -59,6 +59,71 @@
     --clr-prev-button-border-active: #1c6199;
     --clr-next-button-border-active: #1d5b8d;
 }
+
+/* ! code separator */
+
+.dark-mode {
+    /* main background colors */
+    --clr-header: linear-gradient(0deg, #2d4c60, #0a1925);
+    --clr-footer: linear-gradient(#2d4c60, #0a1925);
+    --clr-body: #2d4c60;
+    
+    /* secondary backgroud colors */
+    --clr-img-container-background: #2d4c60;
+    --clr-filter-button-background: linear-gradient(0deg, #5e7283, #3b658775);
+    --clr-dark-mode-button-background: linear-gradient(#5e837d, #3b876b75);
+    --clr-add-photo-button-background: linear-gradient(#5e7283, #3b658775);
+
+    /* primary font colors */
+    --clr-title-font: #e1ebf4;
+    --clr-themes-font: #e1ebf4;
+
+    /* secondary font colors */
+    --clr-filter-button-font: #e1ebf4;
+    --clr-dark-mode-button-font: #e1ebf4;
+    --clr-add-button-font: #e1ebf4;
+    --clr-current-page-font: #e1ebf4;
+
+    /* ternary font colors */
+    --clr-image-info-font: #e1ebf4;
+
+
+    /* border colors" */
+    --clr-filter-button-border: #565c7584;
+    --clr-add-photo-button-border: #565c7584;
+    --clr-dark-mode-button-border: #565c7584;
+    --clr-prev-button-border: #e6e8f0f0;
+    --clr-next-button-border: #e6e8f0f0;
+
+
+    /*todo-separator: hovering-colors */
+    /* background colors */
+    --clr-filter-button-background-hover:  #3c5b7589;
+    --clr-dark-mode-button-background-hover: #46826a89;
+    --clr-add-photo-button-background-hover: #3c5b7589;
+
+    /* font colors */
+    --clr-themes-font-hover: #bd8ed1;
+    
+    /* border colors */
+    --clr-prev-button-border-hover: #e0e8ee;
+    --clr-next-button-border-hover: #e0e8ee;
+
+
+    /*todo-separator: active-colors */
+    /* background colors */
+    --clr-filter-button-background-active:  #5c809eaf;
+    --clr-dark-mode-button-background-active:  #71b298a6;
+    --clr-add-photo-button-background-active: #5c809eaf;
+
+    /* font colors */
+    --clr-themes-font-active: #eac9f2;
+    
+    /* border colors */
+    --clr-prev-button-border-active: #edf1f5;
+    --clr-next-button-border-active: #edf1f5;
+}
+
 
 
 body {
@@ -183,31 +248,31 @@ body {
     box-sizing: border-box;
 }
 
-#dark-theme-container {
+#dark-mode-container {
     grid-column: 2;
 }
 
 
-#dark-theme-button {
+#dark-mode-button {
     grid-column: 3;
     width: 10vw;
     height: 3vw;
     font-size: 1.2vw;
     border-radius: 10px;
-    background: var(--clr-dark-theme-button-background);
-    color: var(--clr-dark-theme-button-font);
-    border: 1px solid var(--clr-dark-theme-button-border);
+    background: var(--clr-dark-mode-button-background);
+    color: var(--clr-dark-mode-button-font);
+    border: 1px solid var(--clr-dark-mode-button-border);
     align-items: center;
     margin: auto;
 }
 
-#dark-theme-button:hover {
-    background: var(--clr-dark-theme-button-background-hover);
+#dark-mode-button:hover {
+    background: var(--clr-dark-mode-button-background-hover);
     transition: 0.2s;
 }
 
-#dark-theme-button:active {
-    background: var(--clr-dark-theme-button-background-active);
+#dark-mode-button:active {
+    background: var(--clr-dark-mode-button-background-active);
 }
 
 
