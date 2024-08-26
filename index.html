@@ -10,9 +10,9 @@
     <header id="gallery-header">
         <h1 id="gallery-title">Photo Gallery</h1>
         <div id="themes-container">
-            <a class="theme-element">Theme 1</a>
-            <a class="theme-element">Theme 2</a>
-            <a class="theme-element">Theme 3</a>
+            <a class="theme-element">Cars</a>
+            <a class="theme-element">Landscape</a>
+            <a class="theme-element">People</a>
         </div>
         <button id="filter-button">Filter</button>
     </header>
@@ -60,6 +60,26 @@
             <img id="dark-mode-icon">
         </div>
         <button id="add-photo-button">Add Photo</button>
+        <!-- add button modal pop-up -->
+        <div id="add-photo-modal"  class="add-photo-modal-hidden">
+            <form id="add-photo-form">
+                <div id="image-selector-container">
+                    <label for="image-input">Upload an image from your PC:</label>
+                    <input id="image-input" type="file">
+                </div>
+                <select id="theme-selector" name="themes" multiple>
+                    <option class="theme-option" value="other">Other</option>
+                    <option class="theme-option" value="cars">Cars</option>
+                    <option class="theme-option" value="landscape">Landscape</option>
+                    <option class="theme-option" value="people">People</option>
+                </select>
+                <input id="photo-description" name="photoDescription" type="text" maxlength="25" placeholder="Describe the photo (max 25 chars)">
+                <div id="cancel-finish-buttons-container">
+                    <button id="cancel-add-photo-button" type="button">Cancel</button>
+                    <button id="finish-add-photo-button" type="submit">Finish</button>
+                </div>
+            </form>
+        </div>
         <div id="navigation-container">
             <button id="prev-button"></button>
             <div id="current-page">1/5</div>
