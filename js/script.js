@@ -30,6 +30,8 @@ handleAddPhotoModalePositioning = () => {
     console.log(addPhotoModalRect );
 };
 
+
 //events
 darkModeButton.addEventListener('click', handleThemeToggle);
-addPhotoButton.addEventListener('click', handleAddPhotoModalePositioning)
+addPhotoButton.addEventListener('click', handleAddPhotoModalePositioning);
+

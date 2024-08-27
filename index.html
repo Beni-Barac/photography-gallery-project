@@ -5,6 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Photography Gallery</title>
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/footer.css ">
+        <link rel="stylesheet" href="css/addPhotoModal.css">
    </head>
    <body class="dark-mode">
     <header id="gallery-header">
@@ -67,12 +71,23 @@
                     <label for="image-input">Upload an image from your PC:</label>
                     <input id="image-input" type="file">
                 </div>
-                <select id="theme-selector" name="themes" multiple>
-                    <option class="theme-option" value="other">Other</option>
-                    <option class="theme-option" value="cars">Cars</option>
-                    <option class="theme-option" value="landscape">Landscape</option>
-                    <option class="theme-option" value="people">People</option>
-                </select>
+                <div>
+                    <label for="image-input">Select the image theme/themes:</label>
+                    <div id="theme-selector-container">
+                        <label class="theme-check-label">
+                            <input class="theme-check-input" type="checkbox" value="other">Other
+                        </label>
+                        <label class="theme-check-label">
+                            <input class="theme-check-input" type="checkbox" value="cars">Cars
+                        </label>
+                        <label class="theme-check-label">
+                            <input class="theme-check-input" type="checkbox" value="landscape">Landscape
+                        </label>
+                        <label class="theme-check-label">
+                            <input class="theme-check-input" type="checkbox" value="people">People
+                        </label>
+                    </div>
+                </div>
                 <input id="photo-description" name="photoDescription" type="text" maxlength="25" placeholder="Describe the photo (max 25 chars)">
                 <div id="cancel-finish-buttons-container">
                     <button id="cancel-add-photo-button" type="button">Cancel</button>
