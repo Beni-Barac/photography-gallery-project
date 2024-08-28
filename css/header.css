@@ -4,23 +4,23 @@
     --clr-header-background: linear-gradient(0deg, #effaf7, #79b5e7);
     
     /* secondary backgroud colors */
-    --clr-filter-button-background: linear-gradient(0deg, #cde6f8, #79b3e2);
+    --clr-delete-photo-button-background: linear-gradient(0deg, #f8e6cd, #e2a579);
 
     /* primary font colors */
     --clr-title-font: #102548;
     --clr-themes-font: #12274c;
 
     /* secondary font colors */
-    --clr-filter-button-font: #12274c;
+    --clr-delete-photo-button-font: #12274c;
 
 
     /* border colors" */
-    --clr-filter-button-border: #11082c84;
+    --clr-delete-photo-button-border: #11082c84;
 
 
     /*todo-separator: hovering-colors */
     /* background colors */
-    --clr-filter-button-background-hover:  #79b3e288;
+    --clr-delete-photo-button-background-hover:  #e2a879a4;
 
     /* font colors */
     --clr-themes-font-hover: #804499;
@@ -29,7 +29,7 @@
 
     /*todo-separator: active-colors */
     /* background colors */
-    --clr-filter-button-background-active:  #6696bdab;
+    --clr-delete-photo-button-background-active:  #bd9966bf;
 
     /* font colors */
     --clr-themes-font-active: #a464b2;
@@ -43,22 +43,22 @@
     --clr-header-background: linear-gradient(0deg, #2d4c60, #0a1925);
     
     /* secondary backgroud colors */
-    --clr-filter-button-background: linear-gradient(0deg, #5e7283, #3b658775);
+    --clr-delete-photo-button-background: linear-gradient(0deg, #83775e, #875e3b75);
 
     /* primary font colors */
     --clr-title-font: #e1ebf4;
     --clr-themes-font: #e1ebf4;
 
     /* secondary font colors */
-    --clr-filter-button-font: #e1ebf4;
+    --clr-delete-photo-button-font: #e1ebf4;
 
     /* border colors" */
-    --clr-filter-button-border: #565c7584;
+    --clr-delete-photo-button-border: #565c7584;
 
 
     /*todo-separator: hovering-colors */
     /* background colors */
-    --clr-filter-button-background-hover:  #3c5b7589;
+    --clr-delete-photo-button-background-hover:  #75603c89;
     
     /* font colors */
     --clr-themes-font-hover: #bd8ed1;
@@ -66,7 +66,7 @@
 
     /*todo-separator: active-colors */
     /* background colors */
-    --clr-filter-button-background-active:  #5c809eaf;
+    --clr-delete-photo-button-background-active:  #9e915caf;
 
 
     /* font colors */
@@ -120,23 +120,23 @@
     cursor: pointer;
 }
 
-#filter-button {
+#delete-photo-button {
     grid-column: 5;
     width: 7vw;
-    height: 2.7vw;
+    height: 3vw;
     font-size: 1.2vw;
     letter-spacing: .2vw;
     border-radius: 20px;
-    border: 2px solid var(--clr-filter-button-border);
-    background: var(--clr-filter-button-background);
-    color: var(--clr-filter-button-font);
+    border: 2px solid var(--clr-delete-photo-button-border);
+    background: var(--clr-delete-photo-button-background);
+    color: var(--clr-delete-photo-button-font);
 }
 
-#filter-button:hover {
-    background: var(--clr-filter-button-background-hover);
+#delete-photo-button:hover {
+    background: var(--clr-delete-photo-button-background-hover);
     transition: .2s;
 }
 
-#filter-button:active {
-    background: var(--clr-filter-button-background-active);
+#delete-photo-button:active {
+    background: var(--clr-delete-photo-button-background-active);
 }
