@@ -69,10 +69,10 @@
             <form id="add-photo-form">
                 <div id="image-selector-container">
                     <label for="image-input">Upload an image from your PC:</label>
-                    <input id="image-input" type="file">
+                    <input id="image-input" type="file" accept="image/*">
                 </div>
                 <div>
-                    <label for="image-input">Select the image theme/themes:</label>
+                    <label for="theme-selector-container">Select the image theme/themes:</label>
                     <div id="theme-selector-container">
                         <label class="theme-check-label">
                             <input class="theme-check-input" type="checkbox" value="other">Other
@@ -103,5 +103,6 @@
     </footer>
     <script src="js/script.js"></script>
     <script src="js/gallery.js"></script>
+    <script src="js/dataSaver.js"></script>
    </body>
 </html>

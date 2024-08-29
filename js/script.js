@@ -27,7 +27,6 @@ handleAddPhotoModalePositioning = () => {
 
     addPhotoModal.style.bottom = `${window.innerHeight - addPhotoButtonRect.top + 20}px`;
     addPhotoModal.style.left = `${addPhotoButtonRect.left + (addPhotoButtonRect.width / 2) - (addPhotoModalRect.width / 2)}px`;
-    console.log(addPhotoModalRect );
 };
 
 
